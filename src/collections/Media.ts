@@ -12,5 +12,10 @@ export const Media: CollectionConfig = {
       required: true,
     },
   ],
-  upload: true,
+  upload: {
+    adminThumbnail: ({ doc }) =>
+      `https://bfptwktgdyytxiumwtbb.supabase.co/storage/v1/object/public/bagan-jaya/media/${doc.filename}`,
+    disableLocalStorage: true,
+    mimeTypes: ['image/*'],
+  },
 }
