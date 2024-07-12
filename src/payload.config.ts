@@ -31,7 +31,7 @@ export default buildConfig({
       titleSuffix: ' | Kelurahan Sungai Beringin',
       icons: [
         {
-          url: '/assets/favicon.png',
+          url: '/favicon.png',
         },
       ],
     },

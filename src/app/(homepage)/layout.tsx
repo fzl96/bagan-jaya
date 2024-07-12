@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import './globals.css'
+import '../globals.css'
 import { Inter, Dancing_Script, Caveat } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import { Navbar } from '@/components/navbar'
