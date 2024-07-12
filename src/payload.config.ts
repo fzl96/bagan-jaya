@@ -19,16 +19,25 @@ import { Galeri } from './collections/Galeri'
 import { Penduduk } from './collections/Penduduk'
 import { Berita } from './collections/Berita'
 import ForceThemeProvider from './ForceThemeProvider'
+import { Logo } from './graphics/Logo'
+import { Icon } from './graphics/Icon'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
   admin: {
+    meta: {
+      titleSuffix: ' | Kelurahan Sungai Beringin',
+    },
     user: Users.slug,
     components: {
       // @ts-ignore
       providers: [ForceThemeProvider],
+      graphics: {
+        Logo,
+        Icon,
+      },
     },
   },
   email: resendAdapter({
