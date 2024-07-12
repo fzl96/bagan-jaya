@@ -7,6 +7,7 @@ import path from 'path'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 import sharp from 'sharp'
+import { resendAdapter } from '@payloadcms/email-resend'
 
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
@@ -30,6 +31,11 @@ export default buildConfig({
       providers: [ForceThemeProvider],
     },
   },
+  email: resendAdapter({
+    defaultFromAddress: 'mail@wisetheticlab.store',
+    defaultFromName: 'Kelurahan Sungai Beringin',
+    apiKey: process.env.RESEND_API_KEY!,
+  }),
   collections: [Profil, Perangkat, Lembaga, Produk, Galeri, Penduduk, Berita, Media, Users],
   editor: slateEditor({}),
   secret: process.env.PAYLOAD_SECRET || '',
