@@ -17,6 +17,7 @@ import { Produk } from './collections/Produk'
 import { Galeri } from './collections/Galeri'
 import { Penduduk } from './collections/Penduduk'
 import { Berita } from './collections/Berita'
+import ForceThemeProvider from './ForceThemeProvider'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -24,6 +25,10 @@ const dirname = path.dirname(filename)
 export default buildConfig({
   admin: {
     user: Users.slug,
+    components: {
+      // @ts-ignore
+      providers: [ForceThemeProvider],
+    },
   },
   collections: [Profil, Perangkat, Lembaga, Produk, Galeri, Penduduk, Berita, Media, Users],
   editor: slateEditor({}),

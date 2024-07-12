@@ -36,8 +36,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "**/*.jsx",
     ".next/types/**/*.ts"
-  ],
+, "src/ForceThemeProvider.tsx", "src/ForceThemeProvider.js"  ],
   "exclude": [
     "node_modules"
   ]

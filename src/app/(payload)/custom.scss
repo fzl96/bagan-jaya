@@ -296,3 +296,6 @@
     --theme-accent-1000: var(--color-accent-0);
   }
   
+  div:has(> #field-theme) {
+    display: none;
+  }
