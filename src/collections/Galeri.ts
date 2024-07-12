@@ -11,6 +11,7 @@ export const Galeri: CollectionConfig = {
   },
   admin: {
     useAsTitle: 'Keterangan',
+    group: 'Informasi Publik',
   },
   fields: [
     {

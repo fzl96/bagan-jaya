@@ -11,6 +11,7 @@ export const Penduduk: CollectionConfig = {
   },
   admin: {
     useAsTitle: 'Kepala Keluarga',
+    group: 'Informasi Publik',
   },
   fields: [
     // {

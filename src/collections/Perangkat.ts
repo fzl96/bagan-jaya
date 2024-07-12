@@ -11,6 +11,7 @@ export const Perangkat: CollectionConfig = {
   },
   admin: {
     useAsTitle: 'Nama',
+    group: 'Pemerintahan',
   },
   fields: [
     {

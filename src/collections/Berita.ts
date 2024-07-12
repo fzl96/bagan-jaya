@@ -4,6 +4,7 @@ export const Berita: CollectionConfig = {
   slug: 'berita',
   admin: {
     useAsTitle: 'Judul',
+    group: 'Informasi Publik',
   },
   labels: {
     singular: 'Berita',

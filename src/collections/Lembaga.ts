@@ -8,6 +8,7 @@ export const Lembaga: CollectionConfig = {
   },
   admin: {
     useAsTitle: 'Nama',
+    group: 'Pemerintahan',
   },
   access: {
     read: () => true,

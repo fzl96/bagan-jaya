@@ -8,6 +8,7 @@ export const Produk: CollectionConfig = {
   },
   admin: {
     useAsTitle: 'Nama',
+    group: 'Informasi Publik',
   },
   access: {
     read: () => true,

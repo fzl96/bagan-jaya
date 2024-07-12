@@ -72,6 +72,9 @@ export function Navbar() {
                     <ListItem href="/galeri" title="Galeri">
                       Galeri foto {siteConfig.name}
                     </ListItem>
+                    <ListItem href="/produk-lokal" title="Produk Lokal">
+                      Produk Lokal {siteConfig.name}
+                    </ListItem>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
