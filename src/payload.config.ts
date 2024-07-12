@@ -29,6 +29,11 @@ export default buildConfig({
   admin: {
     meta: {
       titleSuffix: ' | Kelurahan Sungai Beringin',
+      icons: [
+        {
+          url: '/assets/favicon.png',
+        },
+      ],
     },
     user: Users.slug,
     components: {
