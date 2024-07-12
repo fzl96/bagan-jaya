@@ -19,6 +19,11 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)", "Inter", "sans-serif"],
+        accent: ["var(--font-caveat)", "Caveat", "cursive", "Inter", "sans-serif"],
+      },
+      fontSize: {
+        "7xl": "5rem",
+        "8xl": "6rem",
       },
       colors: {
         border: "hsl(var(--border))",

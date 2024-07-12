@@ -6,7 +6,9 @@ export const Lembaga: CollectionConfig = {
     singular: 'Lembaga Desa',
     plural: 'Lembaga Desa',
   },
-
+  admin: {
+    useAsTitle: 'Nama',
+  },
   access: {
     read: () => true,
   },
@@ -15,6 +17,11 @@ export const Lembaga: CollectionConfig = {
       name: 'Nama',
       type: 'text',
       required: true,
+    },
+    {
+      name: 'Tugas',
+      type: 'textarea',
+      required: false,
     },
   ],
 }

@@ -10,14 +10,9 @@ export const Galeri: CollectionConfig = {
     read: () => true,
   },
   admin: {
-    useAsTitle: 'Judul',
+    useAsTitle: 'Keterangan',
   },
   fields: [
-    {
-      name: 'Judul',
-      type: 'text',
-      required: true,
-    },
     {
       name: 'Foto',
       type: 'upload',
