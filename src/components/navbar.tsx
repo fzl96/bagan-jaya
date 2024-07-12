@@ -20,7 +20,7 @@ export function Navbar() {
         <Link href="/">
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="Logo" className="w-8 h-8" />
-            <span className="text-2xl text-[#f5f0d7] font-accent md:block sr-only">
+            <span className="text-2xl text-[#f5f0d7] font-accent md:not-sr-only sr-only">
               {siteConfig.name}
             </span>
           </div>
