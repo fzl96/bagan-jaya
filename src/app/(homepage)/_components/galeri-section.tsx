@@ -11,7 +11,7 @@ export async function GaleriSection() {
 
   return (
     <div className="md:max-w-[1000px] md:px-0 px-5 mx-auto">
-      <h2 className="font-accent text-5xl text-center font-bold">Galeri Desa</h2>
+      <h2 className="font-accent text-4xl md:text-5xl text-center font-bold">Galeri Desa</h2>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-2 md:gap-5 mt-8">
         {galeri.docs.map((item) => (
           <div key={item.id} className="inline-block bg-white mb-5 rounded-lg shadow-sm">

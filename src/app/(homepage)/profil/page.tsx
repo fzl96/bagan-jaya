@@ -8,7 +8,7 @@ export default function ProfilPage() {
         <div className="absolute inset-0 items-center justify-center text-[#f5f0d7] flex flex-col">
           <div className="text-center space-y-4">
             <h1 className="font-accent text-5xl md:text-8xl font-bold">Profil Kelurahan</h1>
-            <h2 className="font-accent text-3xl md:text-[3.35rem] font-bold">Sungai Beringin</h2>
+            <h2 className="font-accent text-5xl md:text-[3.35rem] font-bold">Sungai Beringin</h2>
           </div>
         </div>
       </div>

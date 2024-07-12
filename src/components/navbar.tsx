@@ -11,6 +11,7 @@ import {
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu'
 import { siteConfig } from '@/config/site'
+import { MobileNav } from './mobile-nav'
 
 export function Navbar() {
   return (
@@ -19,9 +20,14 @@ export function Navbar() {
         <Link href="/">
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="Logo" className="w-8 h-8" />
-            <span className="text-2xl text-[#f5f0d7] font-accent">{siteConfig.name}</span>
+            <span className="text-2xl text-[#f5f0d7] font-accent md:block sr-only">
+              {siteConfig.name}
+            </span>
           </div>
         </Link>
+        <div className="block md:hidden">
+          <MobileNav />
+        </div>
         <nav className="hidden md:block">
           <NavigationMenu>
             <NavigationMenuList className="space-x-5 font-semibold text-[#f5f0d7]">

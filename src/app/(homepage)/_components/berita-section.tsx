@@ -15,7 +15,7 @@ export async function BeritaSection() {
 
   return (
     <div className="md:max-w-[1000px] md:px-0 px-5 mx-auto space-y-10">
-      <h2 className="font-accent text-5xl text-center font-bold">Berita Desa</h2>
+      <h2 className="font-accent text-4xl md:text-5xl text-center font-bold">Berita Desa</h2>
       <div className=" grid md:grid-cols-3 gap-5 grid-cols-1">
         {berita.docs.map((item) => (
           <BeritaCard
