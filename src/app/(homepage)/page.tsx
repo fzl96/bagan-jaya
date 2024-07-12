@@ -1,5 +1,3 @@
-import { getPayloadHMR } from '@payloadcms/next/utilities'
-import config from '@payload-config'
 import { ProfileSection } from './_components/profil-section'
 import { BeritaSection } from './_components/berita-section'
 import { Suspense } from 'react'
@@ -7,17 +5,6 @@ import { GaleriSection } from './_components/galeri-section'
 import { siteConfig } from '@/config/site'
 
 export default async function Home() {
-  const payload = await getPayloadHMR({ config })
-  const profil = await payload.find({
-    collection: 'profil',
-  })
-  const galeri = await payload.find({
-    collection: 'galeri',
-  })
-  const perangkat = await payload.find({
-    collection: 'perangkat-desa',
-  })
-
   return (
     <div>
       <div className="w-full h-96 md:h-[40rem] overflow-hidden relative inline-block">
