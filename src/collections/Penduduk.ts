@@ -3,8 +3,8 @@ import type { CollectionConfig } from 'payload'
 export const Penduduk: CollectionConfig = {
   slug: 'penduduk',
   labels: {
-    singular: 'Data Penduduk',
-    plural: 'Data Penduduk',
+    singular: 'Kelola Penduduk',
+    plural: 'Kelola Penduduk',
   },
   access: {
     read: () => true,

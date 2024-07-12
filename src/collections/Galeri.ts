@@ -3,8 +3,8 @@ import type { CollectionConfig } from 'payload'
 export const Galeri: CollectionConfig = {
   slug: 'galeri',
   labels: {
-    singular: 'Galeri',
-    plural: 'Galeri',
+    singular: 'Kelola Galeri',
+    plural: 'Kelola Galeri',
   },
   access: {
     read: () => true,

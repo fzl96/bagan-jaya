@@ -7,8 +7,8 @@ export const Berita: CollectionConfig = {
     group: 'Informasi Publik',
   },
   labels: {
-    singular: 'Berita',
-    plural: 'Berita',
+    singular: 'Kelola Berita',
+    plural: 'Kelola Berita',
   },
   access: {
     read: () => true,

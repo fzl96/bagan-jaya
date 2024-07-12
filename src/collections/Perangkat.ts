@@ -3,8 +3,8 @@ import type { CollectionConfig } from 'payload'
 export const Perangkat: CollectionConfig = {
   slug: 'perangkat-desa',
   labels: {
-    singular: 'Perangkat Desa',
-    plural: 'Perangkat Desa',
+    singular: 'Kelola Perangkat Desa',
+    plural: 'Kelola Perangkat Desa',
   },
   access: {
     read: () => true,

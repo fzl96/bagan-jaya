@@ -3,8 +3,8 @@ import type { CollectionConfig } from 'payload'
 export const Produk: CollectionConfig = {
   slug: 'produk-lokal',
   labels: {
-    singular: 'Produk Lokal',
-    plural: 'Produk Lokal',
+    singular: 'Kelola Produk Desa',
+    plural: 'Kelola Produk Desa',
   },
   admin: {
     useAsTitle: 'Nama',

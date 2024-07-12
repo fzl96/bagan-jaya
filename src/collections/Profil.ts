@@ -3,8 +3,8 @@ import type { CollectionConfig } from 'payload'
 export const Profil: CollectionConfig = {
   slug: 'profil',
   labels: {
-    singular: 'Profil Desa',
-    plural: 'Profil Desa',
+    singular: 'Kelola Profil Desa',
+    plural: 'Kelola Profil Desa',
   },
   admin: {
     useAsTitle: 'Bagian',

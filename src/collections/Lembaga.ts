@@ -3,8 +3,8 @@ import type { CollectionConfig } from 'payload'
 export const Lembaga: CollectionConfig = {
   slug: 'lembaga',
   labels: {
-    singular: 'Lembaga Desa',
-    plural: 'Lembaga Desa',
+    singular: 'Kelola Lembaga Desa',
+    plural: 'Kelola Lembaga Desa',
   },
   admin: {
     useAsTitle: 'Nama',
