@@ -1,6 +1,8 @@
 import { Suspense } from 'react'
 import { BeritaList } from './_components/berita'
 
+export const dynamic = 'force-dynamic'
+
 export default function BeritaPage({
   searchParams,
 }: {

@@ -1,6 +1,7 @@
 import { Suspense } from 'react'
 import { Lembaga } from './_components/lembaga'
-import { siteConfig } from '@/config/site'
+
+export const dynamic = 'force-dynamic'
 
 export default function LembagaDesaPage() {
   return (
