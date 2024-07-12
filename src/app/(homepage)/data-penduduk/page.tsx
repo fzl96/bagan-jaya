@@ -3,6 +3,8 @@ import { ListPenduduk } from './_components/list-penduduk'
 import { siteConfig } from '@/config/site'
 // import { Perangkat } from './_components/perangkat'
 
+export const dynamic = 'force-dynamic'
+
 export default function DataPendudukPage({
   searchParams,
 }: {

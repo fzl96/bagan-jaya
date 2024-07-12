@@ -2,6 +2,8 @@ import { Suspense } from 'react'
 import { Perangkat } from './_components/perangkat'
 import { siteConfig } from '@/config/site'
 
+export const dynamic = 'force-dynamic'
+
 export default function PerangkatDesaPage() {
   return (
     <div>

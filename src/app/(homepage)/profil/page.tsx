@@ -1,5 +1,7 @@
 import { ProfilSection } from './_components/profil-section'
 
+export const dynamic = 'force-dynamic'
+
 export default function ProfilPage() {
   return (
     <div>

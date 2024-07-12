@@ -3,6 +3,8 @@
 import { siteConfig } from '@/config/site'
 import { ProdukList } from './_components/produk-list'
 
+export const dynamic = 'force-dynamic'
+
 export default function ProdukLokalPage() {
   return (
     <div>
