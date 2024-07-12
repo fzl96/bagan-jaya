@@ -4,13 +4,14 @@ import { Inter, Dancing_Script, Caveat } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { siteConfig } from '@/config/site'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const caveat = Caveat({ subsets: ['latin'], variable: '--font-caveat' })
 
 export const metadata: Metadata = {
-  title: 'Desa Bagan Jaya',
-  description: 'Homepage description',
+  title: siteConfig.name,
+  description: siteConfig.description,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

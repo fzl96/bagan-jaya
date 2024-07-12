@@ -9,6 +9,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import { siteConfig } from '@/config/site'
 
 export async function Lembaga() {
   const payload = await getPayloadHMR({ config })
@@ -19,7 +20,7 @@ export async function Lembaga() {
   return (
     <div className="md:max-w-[860px] mx-auto mt-20">
       <Table>
-        <TableCaption>Daftar Perangkat Lembaga Bagan Jaya</TableCaption>
+        <TableCaption>Daftar Lembaga {siteConfig.name}</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="">Nama</TableHead>

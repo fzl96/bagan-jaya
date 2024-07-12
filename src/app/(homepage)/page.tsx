@@ -4,6 +4,7 @@ import { ProfileSection } from './_components/profil-section'
 import { BeritaSection } from './_components/berita-section'
 import { Suspense } from 'react'
 import { GaleriSection } from './_components/galeri-section'
+import { siteConfig } from '@/config/site'
 
 export default async function Home() {
   const payload = await getPayloadHMR({ config })
@@ -26,9 +27,9 @@ export default async function Home() {
             Selamat Datang di Website Resmi
           </h1>
           <div className="text-center space-y-4">
-            <h2 className="font-accent text-5xl md:text-8xl font-bold">Desa Bagan Jaya</h2>
+            <h2 className="font-accent text-5xl md:text-8xl font-bold">{siteConfig.name}</h2>
             <h3 className="font-accent text-3xl md:text-[3.35rem] font-bold">
-              Kec. Enok, Kab. Indragiri Hilir
+              Kec. Tembilahan, Kab. Indragiri Hilir
             </h3>
           </div>
         </div>

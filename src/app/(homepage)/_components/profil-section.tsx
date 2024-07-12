@@ -6,10 +6,10 @@ export function ProfileSection() {
       <h2 className="font-accent text-5xl text-center font-bold">Profil Desa</h2>
       <div className="w-full">
         <p className="prose mx-auto text-xl">
-          Desa Bagan Jaya Merupakan pemekaran dari Desa Daratan Reteh Dua yang pemekaran dari Desa
-          Sungai Rukam sampai saat ini sertifikat tanah kepemilikan masih tertulis Desa Sungai Rukam
-          atau Reteh dua yang terdiri dari Blok T, Blok E, Blok M, Blok F, Parit Kalimantan, Parit
-          Banjar Masin, Parit Jumat/ Usaha Baru, ParitPelita/Abdullah.
+          Kelurahan Sungai Beringin Merupakan pemekaran dari Desa Daratan Reteh Dua yang pemekaran
+          dari Desa Sungai Rukam sampai saat ini sertifikat tanah kepemilikan masih tertulis Desa
+          Sungai Rukam atau Reteh dua yang terdiri dari Blok T, Blok E, Blok M, Blok F, Parit
+          Kalimantan, Parit Banjar Masin, Parit Jumat/ Usaha Baru, ParitPelita/Abdullah.
         </p>
       </div>
       <Link

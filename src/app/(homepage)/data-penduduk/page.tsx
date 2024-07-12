@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 import { ListPenduduk } from './_components/list-penduduk'
+import { siteConfig } from '@/config/site'
 // import { Perangkat } from './_components/perangkat'
 
 export default function DataPendudukPage({
@@ -23,7 +24,7 @@ export default function DataPendudukPage({
         <div className="absolute inset-0 items-center justify-center text-[#f5f0d7] flex flex-col">
           <div className="text-center space-y-4">
             <h1 className="font-accent text-5xl md:text-8xl font-bold">Data Penduduk</h1>
-            <h2 className="font-accent text-3xl md:text-[3.35rem] font-bold">Desa Bagan Jaya</h2>
+            <h2 className="font-accent text-3xl md:text-[3.35rem] font-bold">{siteConfig.name}</h2>
           </div>
         </div>
       </div>

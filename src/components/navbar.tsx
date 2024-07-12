@@ -10,6 +10,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu'
+import { siteConfig } from '@/config/site'
 
 export function Navbar() {
   return (
@@ -18,7 +19,7 @@ export function Navbar() {
         <Link href="/">
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="Logo" className="w-8 h-8" />
-            <span className="text-2xl text-[#f5f0d7] font-accent">Desa Bagan Jaya</span>
+            <span className="text-2xl text-[#f5f0d7] font-accent">{siteConfig.name}</span>
           </div>
         </Link>
         <nav className="hidden md:block">
@@ -31,7 +32,7 @@ export function Navbar() {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/profil">Profil Desa</Link>
+                  <Link href="/profil">Profil</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
@@ -41,13 +42,13 @@ export function Navbar() {
                 <NavigationMenuContent className="bg-[#f5f4f3]">
                   <ul className="grid w-[400px] gap-2 p-2">
                     <ListItem href="/struktur-organisasi" title="Struktur Organisasi">
-                      Struktur Organisasi Pemerintahan Desa Bagan Jaya
+                      Struktur Organisasi Pemerintahan {siteConfig.name}
                     </ListItem>
                     <ListItem href="/perangkat-desa" title="Perangkat Desa">
-                      Perangkat Desa Bagan Jaya dan Jabatannya
+                      Perangkat Desa {siteConfig.name} dan Jabatannya
                     </ListItem>
-                    <ListItem href="/lembaga-desa" title="Lembaga Desa">
-                      Lembaga Desa Bagan Jaya
+                    <ListItem href="/lembaga-desa" title="Lembaga">
+                      Lembaga {siteConfig.name}
                     </ListItem>
                   </ul>
                 </NavigationMenuContent>
@@ -56,14 +57,14 @@ export function Navbar() {
                 <NavigationMenuTrigger>Informasi Publik</NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-[#f5f4f3]">
                   <ul className="grid w-[400px] gap-2 p-2">
-                    <ListItem href="/berita" title="Berita Desa">
-                      Berita Desa Bagan Jaya Terbaru
+                    <ListItem href="/berita" title="Berita">
+                      Berita {siteConfig.name} Terbaru
                     </ListItem>
                     <ListItem href="/data-penduduk" title="Data Penduduk">
-                      Data Penduduk Desa Bagan Jaya
+                      Data Penduduk {siteConfig.name}
                     </ListItem>
                     <ListItem href="/galeri" title="Galeri">
-                      Galeri foto desa Bagan Jaya
+                      Galeri foto {siteConfig.name}
                     </ListItem>
                   </ul>
                 </NavigationMenuContent>

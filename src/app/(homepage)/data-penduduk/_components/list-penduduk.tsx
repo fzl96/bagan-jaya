@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/table'
 import { Search } from './search'
 import { Pagination } from './pagination'
+import { siteConfig } from '@/config/site'
 
 export async function ListPenduduk({ query, page }: { query: string; page: number }) {
   const payload = await getPayloadHMR({ config })
@@ -29,7 +30,7 @@ export async function ListPenduduk({ query, page }: { query: string; page: numbe
       <div className="space-y-5">
         <Search placeholder="Cari kepala keluarga..." />
         <Table>
-          <TableCaption>Daftar Perangkat Lembaga Bagan Jaya</TableCaption>
+          <TableCaption>Data Penduduk {siteConfig.name}</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="">Nama Kepala Keluarga</TableHead>

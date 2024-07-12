@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 import { Lembaga } from './_components/lembaga'
+import { siteConfig } from '@/config/site'
 
 export default function LembagaDesaPage() {
   return (
@@ -12,8 +13,8 @@ export default function LembagaDesaPage() {
         />
         <div className="absolute inset-0 items-center justify-center text-[#f5f0d7] flex flex-col">
           <div className="text-center space-y-4">
-            <h1 className="font-accent text-5xl md:text-8xl font-bold">Lembaga Desa</h1>
-            <h2 className="font-accent text-3xl md:text-[3.35rem] font-bold">Bagan Jaya</h2>
+            <h1 className="font-accent text-5xl md:text-8xl font-bold">Lembaga Kelurahan</h1>
+            <h2 className="font-accent text-3xl md:text-[3.35rem] font-bold">{siteConfig.name}</h2>
           </div>
         </div>
       </div>
