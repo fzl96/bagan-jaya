@@ -23,5 +23,11 @@ export const Profil: CollectionConfig = {
       type: 'richText',
       required: true,
     },
+    {
+      name: 'Gambar',
+      type: 'upload',
+      required: false,
+      relationTo: 'media',
+    },
   ],
 }

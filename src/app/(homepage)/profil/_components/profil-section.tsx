@@ -7,12 +7,16 @@ export async function ProfilSection() {
   const payload = await getPayloadHMR({ config })
   const profil = await payload.find({
     collection: 'profil',
-    sort: '',
   })
 
   return (
     <div className="md:max-w-[860px] md:px-0 px-5 mx-auto">
       {profil.docs
+        .filter(
+          (item) =>
+            !(item.Bagian as string).toLowerCase().includes('struktur') ||
+            !(item.Bagian as string).toLowerCase().includes('organisasi'),
+        )
         .sort((a, b) => {
           // @ts-ignore
           return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime()
